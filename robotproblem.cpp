@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
-
+#include <limits>
 class Robot {
-
 public:
     Robot(int width, int height) {} 
 
@@ -17,6 +16,8 @@ public:
     std::string getDir() {
         
     }
+private:
+    int toMove = std::numeric_limits<int>::max();
 };
 
 int main(int argc, const char** argv){
