@@ -5,7 +5,18 @@ class Robot {
 
 public:
     Robot(int width, int height) {} 
+
+    void step(int num) {
+        
+    }
     
+    std::vector<int> getPos() {
+        
+    }
+    
+    std::string getDir() {
+        
+    }
 };
 
 int main(int argc, const char** argv){
