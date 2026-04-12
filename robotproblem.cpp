@@ -1,6 +1,14 @@
 #include <iostream>
 #include <vector>
 #include <limits>
+enum class Direction {
+    EAST,
+    WEST,
+    NORTH,
+    SOUTH
+};
+
+
 class Robot {
 public:
     Robot(int width, int height) {} 
