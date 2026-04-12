@@ -8,6 +8,18 @@ enum class Direction {
     SOUTH
 };
 
+class Cell {
+public:
+    int getX(){
+        return this->x;
+    }
+    int getY(){
+        return this->y;
+    }
+private:
+    int x;
+    int y;
+};
 
 class Robot {
 public:
@@ -22,18 +34,15 @@ public:
     }
     
     std::string getDir() {
-        
+
     }
 private:
     int toMove = std::numeric_limits<int>::max();
+
 };
 
 int main(int argc, const char** argv){
-    for(size_t i = 1; i <= argc; ++i)
-    {
-        if(i == 0)
-            std::cout << "\n";
-        std::cout << argv[i] << "\n";
-    }
+    std::vector<Cell> map;
+    
     return 0;
 }
