@@ -38,7 +38,7 @@ public:
     }
 private:
     int toMove = std::numeric_limits<int>::max();
-
+    Cell currentCell;
 };
 
 int main(int argc, const char** argv){
