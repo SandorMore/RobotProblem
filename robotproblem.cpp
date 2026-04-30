@@ -53,6 +53,7 @@ int main(int argc, const char** argv){
     for(size_t i = 1; i <= argc; ++i){
         map.emplace_back(std::stoi(argv[i]));
     }
-
+    for(auto& i : map)
+        printf("%d",i);
     return 0;
 }
